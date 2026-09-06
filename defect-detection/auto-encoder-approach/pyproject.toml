@@ -1,0 +1,23 @@
+[project]
+name = "auto-encoder-approach"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "AD221606", email = "aryandubey221606@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "torch>=2.14.0",
+    "torchvision>=0.29.0",
+]
+
+[project.scripts]
+auto-encoder-approach = "auto_encoder_approach.main:main"
+
+[[tool.uv.index]]
+url = "https://download.pytorch.org/whl/cu132"
+
+[build-system]
+requires = ["uv_build>=0.12.9,<0.13.0"]
+build-backend = "uv_build"
