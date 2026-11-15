@@ -1,0 +1,4 @@
+defect-detection/dataset
+__pycache__
+
+*.pt
